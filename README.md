@@ -1,6 +1,6 @@
 # João Alberto Albuquerque — Portfolio
 
-Portfólio profissional de João Alberto Albuquerque, Data Scientist & AI Engineer.
+MEU portfólio profissional, João Alberto Albuquerque, Data Scientist & AI Engineer.
 
 Construído com **Next.js 14**, **Tailwind CSS** e **lucide-react**.
 

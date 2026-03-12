@@ -1,0 +1,55 @@
+---
+description: Project Development Guidelines
+globs: ["**/*"]
+alwaysApply: true
+---
+# João Albuquerque Portfolio — Development Guidelines
+
+Auto-generated from feature plan `001-visual-identity-github`. Last updated: 2026-03-12
+
+## Active Technologies
+
+- **TypeScript 5** (strict mode) — all component and data files
+- **Next.js 14.2** (App Router) — framework
+- **Tailwind CSS 3.4** — all styling; custom tokens in `tailwind.config.ts`
+- **lucide-react 0.441** — ONLY icon library permitted
+- **Inter** (next/font/google) — primary font
+
+## Project Structure
+
+```text
+portfolio/
+├── app/           ← Next.js App Router (layout, page, globals.css)
+├── components/    ← One file per UI section; max 200 lines each
+├── lib/data.ts    ← Single source of truth for ALL content
+├── public/        ← Static assets (profile.jpg)
+└── .specify/      ← Spec, plan, research, data-model artifacts
+```
+
+## Commands
+
+```bash
+npm run dev      # development server → http://localhost:3000
+npm run build    # production build (must pass zero errors)
+npm run lint     # ESLint check
+```
+
+## Code Style
+
+- TypeScript strict — no `any`, no `// @ts-ignore`
+- All data in `lib/data.ts` — components are pure/data-agnostic
+- Icons: lucide-react only — no other icon library
+- Colors: `#050505` bg, off-white text, `#10B981` (emerald) + `#06B6D4` (cyan) accents
+- GitHub handle: `J-Albertoo` (two o's) — never `J-Alberto0` (with zero)
+- `isPrivate: true` repos → render "Repo Privado" badge, NOT a link to profile
+
+## Recent Changes
+
+- `001-visual-identity-github`: TypeScript + Next.js 14 + Tailwind CSS + lucide-react
+  - Corrected GitHub handle to `J-Albertoo` across all files
+  - Added `NeuralDecoration` (desktop) + `MobileNeuralDots` (mobile) in Hero
+  - Added `isPrivate`, `githubUrl | null`, `demoUrl | null` fields to `GitHubRepo` type
+  - "Repo Privado" badge on private projects in Projects section
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->
